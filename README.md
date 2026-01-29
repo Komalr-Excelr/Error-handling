@@ -42,6 +42,9 @@ error-recovery-system/
 - **Permanent errors** (401, invalid payloads, quota exceeded):
   - Categorized as `PermanentError`
   - No retry; the call is marked failed and the system proceeds
+![image alt](https://github.com/Komalr-Excelr/Error-handling/blob/4fba0685bd328f9d1ed732b34607a6ea4e38bc98/Example%20logs/Screenshot%202026-01-29%20191951.png)
+![image alt](https://github.com/Komalr-Excelr/Error-handling/blob/4fba0685bd328f9d1ed732b34607a6ea4e38bc98/Example%20logs/Screenshot%202026-01-29%20192006.png)
+
 
 ## 2. Retry Strategy:
 
@@ -51,6 +54,8 @@ error-recovery-system/
   - `retry.max_attempts`: total attempts (default 3)
 - **Scope**: Applied only to `TransientError`.
 - **Behavior**: `delay *= backoff_factor` per retry; aborts when `max_attempts` exhausted.
+![image alt](https://github.com/Komalr-Excelr/Error-handling/blob/4fba0685bd328f9d1ed732b34607a6ea4e38bc98/Example%20logs/Screenshot%202026-01-29%20192006.png)
+
 
 ## 3. Circuit Breaker Behavior:
 
@@ -60,6 +65,7 @@ error-recovery-system/
   - `Half‑Open`: probe state after timeout; success resets to `Closed`, failure re‑opens
 - **Thresholds**: Controlled by `circuit_breaker.failure_threshold` and `reset_timeout_seconds`.
 - **Per‑service**: Breakers are independent per integration to isolate faults.
+![image alt](https://github.com/Komalr-Excelr/Error-handling/blob/4fba0685bd328f9d1ed732b34607a6ea4e38bc98/Example%20logs/Screenshot%202026-01-29%20191942.png)
 
 ## 4. Logging & Observability:
 
@@ -67,7 +73,7 @@ error-recovery-system/
 - **Google Sheets (mock)**: CSV appended at `logs/google_sheets.csv` for non‑technical visibility (works without external endpoints).
 - **Visualization**: `src/visualize_logs.py` summarizes event categories, breaker states, and services.
 ![image alt](https://github.com/Komalr-Excelr/Error-handling/blob/5d7625de07216b46faec5268a6dc151087cd9213/Example%20logs/Screenshot%202026-01-29%20190229.png)
-
+![image alt](https://github.com/Komalr-Excelr/Error-handling/blob/4fba0685bd328f9d1ed732b34607a6ea4e38bc98/Example%20logs/Screenshot%202026-01-29%20190257.png)
 
 ## 5. Alerts:
 
@@ -76,14 +82,14 @@ error-recovery-system/
   - A call permanently fails
   - A dependency remains down beyond a threshold
 - **Channels**: Email, Telegram, Webhook (implemented; demo prints to console for safety).
-
+![image alt](https://github.com/Komalr-Excelr/Error-handling/blob/4fba0685bd328f9d1ed732b34607a6ea4e38bc98/Example%20logs/Screenshot%202026-01-29%20191926.png)
 
 ## 6. Health Checks:
 
 - **Periodic** checks run in a background thread.
 - **Recovery**: When a service reports healthy, its breaker is reset to `Closed`.
 - **Deterministic**: `run_once()` allows manual invocation in tests and demos.
-
+![image alt](https://github.com/Komalr-Excelr/Error-handling/blob/4fba0685bd328f9d1ed732b34607a6ea4e38bc98/Example%20logs/Screenshot%202026-01-29%20191926.png)
 
 ## 7. Graceful Degradation:
 

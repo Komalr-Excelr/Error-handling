@@ -1,0 +1,6 @@
+timestamp,service,category,retry_count,circuit_breaker_state,message
+2026-01-29T13:28:27Z,elevenlabs,transient,0,OPEN,Circuit open for elevenlabs
+2026-01-29T13:28:27Z,elevenlabs,transient,0,OPEN,Circuit open for elevenlabs
+2026-01-29T13:28:27Z,elevenlabs,transient,0,OPEN,Circuit open for elevenlabs
+2026-01-29T13:28:28Z,elevenlabs,success,0,CLOSED,TTS success
+2026-01-29T13:28:28Z,elevenlabs,success,0,CLOSED,TTS success

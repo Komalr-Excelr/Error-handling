@@ -1,0 +1,24 @@
+{"timestamp": "2026-01-29T11:29:48Z", "service": "elevenlabs", "category": "success", "retry_count": 0, "circuit_breaker_state": "CLOSED", "message": "TTS success"}
+{"timestamp": "2026-01-29T11:29:48Z", "service": "elevenlabs", "category": "success", "retry_count": 0, "circuit_breaker_state": "CLOSED", "message": "TTS success"}
+{"timestamp": "2026-01-29T11:31:44Z", "service": "elevenlabs", "category": "success", "retry_count": 0, "circuit_breaker_state": "CLOSED", "message": "TTS success"}
+{"timestamp": "2026-01-29T11:31:44Z", "service": "elevenlabs", "category": "success", "retry_count": 0, "circuit_breaker_state": "CLOSED", "message": "TTS success"}
+{"timestamp": "2026-01-29T11:37:18Z", "service": "elevenlabs", "category": "transient", "retry_count": 0, "circuit_breaker_state": "OPEN", "message": "Circuit open for elevenlabs"}
+{"timestamp": "2026-01-29T11:37:18Z", "service": "elevenlabs", "category": "transient", "retry_count": 0, "circuit_breaker_state": "OPEN", "message": "Circuit open for elevenlabs"}
+{"timestamp": "2026-01-29T11:37:18Z", "service": "elevenlabs", "category": "transient", "retry_count": 0, "circuit_breaker_state": "OPEN", "message": "Circuit open for elevenlabs"}
+{"timestamp": "2026-01-29T11:37:24Z", "service": "elevenlabs", "category": "success", "retry_count": 0, "circuit_breaker_state": "CLOSED", "message": "TTS success"}
+{"timestamp": "2026-01-29T11:37:24Z", "service": "elevenlabs", "category": "success", "retry_count": 0, "circuit_breaker_state": "CLOSED", "message": "TTS success"}
+{"timestamp": "2026-01-29T11:38:07Z", "service": "elevenlabs", "category": "transient", "retry_count": 0, "circuit_breaker_state": "OPEN", "message": "Circuit open for elevenlabs"}
+{"timestamp": "2026-01-29T11:38:07Z", "service": "elevenlabs", "category": "transient", "retry_count": 0, "circuit_breaker_state": "OPEN", "message": "Circuit open for elevenlabs"}
+{"timestamp": "2026-01-29T11:38:07Z", "service": "elevenlabs", "category": "transient", "retry_count": 0, "circuit_breaker_state": "OPEN", "message": "Circuit open for elevenlabs"}
+{"timestamp": "2026-01-29T11:38:13Z", "service": "elevenlabs", "category": "success", "retry_count": 0, "circuit_breaker_state": "CLOSED", "message": "TTS success"}
+{"timestamp": "2026-01-29T11:38:13Z", "service": "elevenlabs", "category": "success", "retry_count": 0, "circuit_breaker_state": "CLOSED", "message": "TTS success"}
+{"timestamp": "2026-01-29T13:28:27Z", "service": "elevenlabs", "category": "transient", "retry_count": 0, "circuit_breaker_state": "OPEN", "message": "Circuit open for elevenlabs"}
+{"timestamp": "2026-01-29T13:28:27Z", "service": "elevenlabs", "category": "transient", "retry_count": 0, "circuit_breaker_state": "OPEN", "message": "Circuit open for elevenlabs"}
+{"timestamp": "2026-01-29T13:28:27Z", "service": "elevenlabs", "category": "transient", "retry_count": 0, "circuit_breaker_state": "OPEN", "message": "Circuit open for elevenlabs"}
+{"timestamp": "2026-01-29T13:28:28Z", "service": "elevenlabs", "category": "success", "retry_count": 0, "circuit_breaker_state": "CLOSED", "message": "TTS success"}
+{"timestamp": "2026-01-29T13:28:28Z", "service": "elevenlabs", "category": "success", "retry_count": 0, "circuit_breaker_state": "CLOSED", "message": "TTS success"}
+{"timestamp": "2026-01-29T13:41:38Z", "service": "elevenlabs", "category": "transient", "retry_count": 0, "circuit_breaker_state": "OPEN", "message": "Circuit open for elevenlabs"}
+{"timestamp": "2026-01-29T13:41:38Z", "service": "elevenlabs", "category": "transient", "retry_count": 0, "circuit_breaker_state": "OPEN", "message": "Circuit open for elevenlabs"}
+{"timestamp": "2026-01-29T13:41:38Z", "service": "elevenlabs", "category": "transient", "retry_count": 0, "circuit_breaker_state": "OPEN", "message": "Circuit open for elevenlabs"}
+{"timestamp": "2026-01-29T13:41:39Z", "service": "elevenlabs", "category": "success", "retry_count": 0, "circuit_breaker_state": "CLOSED", "message": "TTS success"}
+{"timestamp": "2026-01-29T13:41:39Z", "service": "elevenlabs", "category": "success", "retry_count": 0, "circuit_breaker_state": "CLOSED", "message": "TTS success"}

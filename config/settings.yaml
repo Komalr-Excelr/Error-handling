@@ -1,0 +1,48 @@
+app:
+  name: "AI Call Agent"
+  environment: "dev"
+
+retry:
+  initial_delay_seconds: 5
+  max_attempts: 3
+  backoff_factor: 2.0
+
+circuit_breaker:
+  failure_threshold: 3
+  reset_timeout_seconds: 30
+
+health_check:
+  interval_seconds: 10
+
+logging:
+  file_path: "logs/app.log"
+  level: "INFO"
+  google_sheets:
+    enabled: true
+    endpoint_url: ""
+    mock_file_path: "logs/google_sheets.csv"
+
+alerts:
+  email:
+    enabled: false
+    smtp_host: ""
+    smtp_port: 587
+    username: ""
+    password: ""
+    from: ""
+    to: []
+  telegram:
+    enabled: false
+    bot_token: ""
+    chat_id: ""
+  webhook:
+    enabled: false
+    url: ""
+
+services:
+  elevenlabs:
+    base_url: "https://api.elevenlabs.io"
+  llm_provider:
+    base_url: "https://api.llm.example"
+  crm_api:
+    base_url: "https://api.crm.example"

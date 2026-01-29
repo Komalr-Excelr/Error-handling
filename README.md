@@ -66,6 +66,7 @@ error-recovery-system/
 - **Local file**: Structured JSON lines at `logs/app.log` (timestamp, service, category, retry_count, circuit_breaker_state, message).
 - **Google Sheets (mock)**: CSV appended at `logs/google_sheets.csv` for non‑technical visibility (works without external endpoints).
 - **Visualization**: `src/visualize_logs.py` summarizes event categories, breaker states, and services.
+![image alt](https://github.com/Komalr-Excelr/Error-handling/blob/5d7625de07216b46faec5268a6dc151087cd9213/Example%20logs/Screenshot%202026-01-29%20190229.png)
 
 
 ## 5. Alerts:

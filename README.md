@@ -120,6 +120,8 @@ This scenario demonstrates detection, retries, failure handling, breaker open, c
 
 ### Logs (Structured JSON)
 {"timestamp": "2026-01-29T13:28:27Z", "service": "elevenlabs", "category": "transient", "retry_count": 0, "circuit_breaker_state": "OPEN", "message": "Circuit open for elevenlabs"}
+
+
 {"timestamp": "2026-01-29T13:28:28Z", "service": "elevenlabs", "category": "success", "retry_count": 0, "circuit_breaker_state": "CLOSED", "message": "TTS success"}
 
 
@@ -127,6 +129,7 @@ This scenario demonstrates detection, retries, failure handling, breaker open, c
 timestamp,service,category,retry_count,circuit_breaker_state,message
 2026-01-29T13:28:27Z,elevenlabs,transient,0,OPEN,Circuit open for elevenlabs
 2026-01-29T13:28:28Z,elevenlabs,success,0,CLOSED,TTS success
+![image alt](https://github.com/Komalr-Excelr/Error-handling/blob/5d7625de07216b46faec5268a6dc151087cd9213/Example%20logs/Screenshot%202026-01-29%20190229.png)
 
 
 ## Quick Start (Windows / PowerShell)
